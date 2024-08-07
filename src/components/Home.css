@@ -1,0 +1,291 @@
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-bg);
+
+  overflow: hidden;
+  font-family: "Monorama";
+}
+
+/* Navbar */
+/* 1em = 16px */
+
+.home-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 64px;
+
+  z-index: 700;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 65px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  color: var(--color-accent);
+  font-family: "Lexa";
+  /* font-family: "Saans"; */
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.job-title {
+  color: var(--color-text);
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-button {
+  position: relative;
+  background: none;
+  outline: none;
+  border: 1.5px solid var(--color-text);
+  border-radius: 4px;
+  font-size: 17px;
+  color: var(--color-text);
+  font-family: "Saans";
+  font-weight: 700;
+  padding: 0.25em 0.75em;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+  z-index: 800;
+}
+
+.nav-button span {
+  padding-right: 0.5em;
+}
+
+.nav-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--color-text);
+  z-index: -1;
+  transition: all 1s;
+}
+
+.nav-button:hover {
+  color: var(--color-bg);
+}
+
+.nav-button:hover::after {
+  width: 100%;
+}
+
+.intro-container {
+  position: relative;
+  right: -25%;
+  width: 75%;
+  padding: 4em;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text);
+
+  z-index: 800;
+}
+
+.intro {
+  font-family: "Saans";
+  font-weight: 500;
+  width: 30%;
+}
+
+.portfolio-text {
+  font-size: 40px;
+  text-align: right;
+}
+
+/* Scrollbar */
+
+.dragging-track {
+  position: fixed;
+
+  bottom: 300px;
+  left: 64px;
+  width: 90px;
+  height: 410px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.dragging-bar {
+  position: absolute;
+  top: -18px;
+  left: 0px;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+  line-height: 120%;
+}
+
+.dragging-bar:hover {
+  color: #0032ff;
+}
+
+.dragging-bar span {
+  /* font-family: "Monorama"; */
+  font-family: "Saans";
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 24px;
+  background: #ffffff;
+}
+
+.marker {
+  width: 5px;
+  height: 1px;
+  background: #000;
+  margin-left: 15px;
+}
+
+/* Footer */
+.home-projects-container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+
+  width: 100%;
+  padding: 32px 64px 64px 64px;
+
+  color: var(--color-text);
+
+  z-index: 800;
+}
+
+.home-projects-container > div {
+  flex: 1;
+}
+
+.home-project-index p {
+  font-family: "Saans";
+  font-weight: 600;
+}
+
+.home-project-name p {
+  font-size: 42px;
+  padding: 0.5em 0 1.5em 0;
+  font-family: "Saans";
+  font-weight: 700;
+}
+
+.home-project-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.home-project-info > div {
+  flex: 1;
+}
+
+.home-project-category {
+  margin-bottom: 32px;
+}
+
+/* Projects Container */
+
+.home-display-projects-mask-top {
+  position: absolute;
+
+  bottom: 0;
+  top: 0;
+  right: 48px;
+  bottom: 530px;
+  width: 932px;
+
+  background: var(--color-bg);
+
+  z-index: 100;
+}
+
+.home-display-projects-mask-bot {
+  position: absolute;
+
+  bottom: 0;
+  top: 70%;
+  right: 48px;
+  bottom: 0px;
+  width: 932px;
+
+  background: var(--color-bg);
+
+  z-index: 100;
+}
+
+.home-display-projects {
+  position: absolute;
+
+  bottom: 0;
+  right: 4em;
+  bottom: 30%;
+  width: 900px;
+  height: 250px;
+  background: #0032ff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  /* overflow: hidden; */
+
+  z-index: 10;
+}
+
+.home-display-project-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background: var(--color-accent);
+  color: var(--color-loader);
+
+  display: flex;
+
+  z-index: 1000;
+}
+
+.counter {
+  font-size: 80px;
+  margin: auto auto;
+}
+
+@media (max-width: 900px) {
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .intro-container {
+    right: 0;
+    width: 100%;
+  }
+
+  p.intro {
+    display: none;
+  }
+}

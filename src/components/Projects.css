@@ -1,0 +1,122 @@
+.project-cards-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.projects-page-nav {
+  position: fixed;
+
+  width: 100%;
+
+  background: transparent;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 32px 64px;
+  gap: 32px;
+
+  z-index: 1000;
+}
+
+.project-cards {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.projects-divider {
+  position: relative;
+  width: 1px;
+  height: 100vh;
+  background: var(--color-divider);
+}
+
+.project-card {
+  position: relative;
+  width: 25vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Card Mask Animation */
+
+.card-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--color-mask);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.project-card-wrapper:hover .card-mask {
+  top: -100%;
+}
+
+/* Image Scale Animation */
+
+.project-card img {
+  position: absolute;
+
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+
+  transform: scale(1.5);
+  transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.project-card-wrapper:hover img {
+  transform: scale(1);
+}
+
+.project-card-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8em 2em 8em 2em;
+
+  text-transform: uppercase;
+  line-height: 60px;
+  color: #000;
+  z-index: 2;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Hover */
+.project-card-wrapper:hover .project-card-text {
+  color: #fff;
+}
+.project-card-wrapper:hover .project-card-text .project-card-id {
+  color: #fff;
+}
+
+/* Edited */
+
+.project-card-text .project-card-id {
+  color: var(--color-accent);
+  font-family: "Lexa";
+  font-size: 150px;
+}
+
+.project-name {
+  font-family: "Saans";
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.project-name span {
+  font-size: 14px;
+  line-height: 120%;
+  text-transform: uppercase;
+  display: block;
+}

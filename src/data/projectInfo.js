@@ -1,0 +1,58 @@
+export const projectInfo = [
+  {
+    name: "MINING HOUSE",
+    subTitle: "THESIS / B.ARCH",
+    year: 2021,
+    type: "Cornell Thesis",
+    description: "// Crypto System",
+    techStack: [
+      "/* Rhinoceros",
+      "* Photoshop",
+      "* Premiere Pro",
+      "* After Effects",
+      "* Ethereum Mining */",
+    ],
+  },
+  {
+    name: "ORBIT",
+    subTitle: "FULL STACK",
+    year: 2024,
+    type: "Independent Project",
+    description: "// AI Chat App",
+    techStack: [
+      "/* Gemini API",
+      "* React",
+      "* Context API",
+      "* Firebase Auth",
+      "* Firestore Database */",
+    ],
+  },
+  {
+    name: "TOVIER",
+    subTitle: "FRONTEND",
+    year: 2024,
+    type: "Independent Project",
+    description: "// Trailer Preview",
+    techStack: [
+      "/* TMDB API",
+      "* React",
+      "* Context API",
+      "* Firebase Auth",
+      "* Firestore Database */",
+    ],
+  },
+  {
+    name: "SONICFI",
+    subTitle: "FULL STACK",
+    year: 2024,
+    type: "Independent Project",
+    description: "// Music Streaming",
+    techStack: [
+      "/* Spotify API",
+      "* React",
+      "* Context API",
+      "* Firebase Auth",
+      "* Firestore Database */",
+    ],
+  },
+];
