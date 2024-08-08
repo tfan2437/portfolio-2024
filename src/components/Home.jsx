@@ -26,7 +26,6 @@ const Home = () => {
       <div className="loader">
         <div className="counter">70</div>
       </div>
-
       <nav className="home-navbar">
         <div className="logo-container">
           <div className="logo">
@@ -66,10 +65,8 @@ const Home = () => {
           PORTFOLIO 2024
         </p>
       </div>
-
       <div className="home-display-projects-mask-top"></div>
       <div className="home-display-projects-mask-bot"></div>
-
       <div className="home-display-projects">
         <img
           src={assets.mining_w}
@@ -88,7 +85,6 @@ const Home = () => {
           className="home-display-project-img"
         />
       </div>
-
       <div className="dragging-track">
         <div className="dragging-bar">
           <p>
@@ -96,7 +92,6 @@ const Home = () => {
           </p>
         </div>
       </div>
-
       <footer className="home-projects-container">
         <div>
           <div className="home-project-index">

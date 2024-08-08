@@ -19,7 +19,7 @@ const useScroll = () => {
     const imagesEnd = imagesStart + imagesContainer.offsetHeight;
     const viewportHeight = window.innerHeight;
     const previewHeight = preview.offsetHeight;
-    const previewMaxTranslate = (minimap.offsetHeight - previewHeight) * 2.84;
+    const previewMaxTranslate = (minimap.offsetHeight - previewHeight) * 0.95;
 
     function handleScroll() {
       const scrollPosition = window.scrollY;

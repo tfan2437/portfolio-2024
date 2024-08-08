@@ -70,7 +70,7 @@
   top: 0;
   width: 25%;
   height: 100vh;
-  padding-top: 300px;
+  padding-top: 200px;
   overflow: hidden;
   background-color: #000;
   transition: 0.5s background-color;
@@ -78,10 +78,10 @@
 
 .active-img-indicator {
   position: absolute;
-  top: 300px;
+  top: 195px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px;
+  width: 170px;
   height: 125px;
   border: 1.5px solid #fff;
   border-radius: 4px;
@@ -100,24 +100,74 @@
   align-items: center;
 }
 
+.item-preview {
+  position: relative;
+  width: 150px;
+  height: 75px;
+  object-fit: cover;
+  padding: 0px;
+  margin-top: 2px;
+  overflow: hidden;
+}
+
+.item-preview-mobile {
+  position: relative;
+  width: 150px;
+  height: 75px;
+  object-fit: cover;
+  padding: 0px;
+  margin-top: 2px;
+  overflow: hidden;
+
+  display: flex;
+  gap: 1px;
+}
+
+.item-preview-mobile-img {
+  object-fit: cover;
+  width: 37px;
+  height: auto;
+}
+
+/* Gallery Images */
+
 .images {
   position: relative;
   top: 0;
   width: 75%;
+  margin-top: 100px;
 }
 
 .item {
   position: relative;
-  width: 500px;
-  height: 600px;
+  width: 1000px;
+  height: 500px;
   overflow: hidden;
-  margin: 50px auto;
+  margin: 10px auto 10px 0;
 }
 
 .item-img {
-  width: 500px;
-  height: 550px;
+  width: 1000px;
+  height: 500px;
 }
+
+.item-mobile {
+  position: relative;
+  width: 1000px;
+  height: 523px;
+  margin: 10px auto 10px 0;
+
+  display: flex;
+  gap: 10px;
+}
+
+.item-mobile-img {
+  object-fit: cover;
+  width: 242px;
+  height: 523px;
+}
+
+/* Gallery Images End*/
 
 .item-copy {
   width: 100%;
@@ -125,14 +175,6 @@
   justify-content: space-between;
   padding: 5px 0;
   text-transform: uppercase;
-}
-
-.item-preview {
-  position: relative;
-  width: 100px;
-  height: 125px;
-  padding: 10px;
-  overflow: hidden;
 }
 
 .hero-img {

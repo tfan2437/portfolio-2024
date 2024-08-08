@@ -1,6 +1,7 @@
 import "./GalleryPage.css";
 import useScroll from "../utils/useScroll";
 import { useEffect } from "react";
+import { orbitWeb, orbitMobile } from "../assets/assets";
 
 const GalleryPage = () => {
   useScroll();
@@ -23,33 +24,37 @@ const GalleryPage = () => {
       <div className="gallery">
         <div className="minimap">
           <div className="preview">
-            {Array.from({ length: 10 }, (_, i) => (
-              <div className="item-preview" key={i}>
-                <img
-                  src={`../src/assets/img${i + 1}.jpg`}
-                  alt={`img${i + 1}`}
-                />
+            {orbitWeb.map((item, index) => (
+              <div className="item-preview" key={index}>
+                <img src={item} alt="" />
               </div>
             ))}
+            <div className="item-preview-mobile">
+              {orbitMobile.map((item, index) => (
+                <div className="item-preview-mobile-img" key={index}>
+                  <img src={item} alt="" />
+                </div>
+              ))}
+            </div>
           </div>
           <div className="active-img-indicator"></div>
         </div>
 
         <div className="images">
-          {Array.from({ length: 10 }, (_, i) => (
-            <div className="item" key={i}>
+          {orbitWeb.map((item, index) => (
+            <div className="item" key={index}>
               <div className="item-img">
-                <img
-                  src={`../src/assets/img${i + 1}.jpg`}
-                  alt={`img${i + 1}`}
-                />
-              </div>
-              <div className="item-copy">
-                <p>{`img_${i + 1}.jpg`}</p>
-                <p>{`${i + 1}`}</p>
+                <img src={item} alt="" />
               </div>
             </div>
           ))}
+          <div className="item-mobile">
+            {orbitMobile.map((item, index) => (
+              <div className="item-mobile-img" key={index}>
+                <img src={item} alt="" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
