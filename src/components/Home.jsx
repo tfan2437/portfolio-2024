@@ -102,9 +102,11 @@ const Home = () => {
           <div className="home-project-name">
             <p className="animated-text">{projectInfo[projectIndex].name}</p>
           </div>
-          <button className="nav-button">
-            <span>·</span> PROJECT PAGE
-          </button>
+          <a href={projectInfo[projectIndex].domain} target="_blank">
+            <button className="nav-button">
+              <span>·</span> PROJECT WEBSITE
+            </button>
+          </a>
         </div>
         <div className="home-project-info">
           <div>

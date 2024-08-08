@@ -17,8 +17,8 @@ const GalleryPage = () => {
   return (
     <div className="gallery-container">
       <nav>
-        <a href="#">Codegrid</a>
-        <a href="#">Subscribe</a>
+        <a href="#">Home</a>
+        <a href="#">Live Demo</a>
       </nav>
 
       <div className="gallery">
@@ -64,9 +64,6 @@ const GalleryPage = () => {
           journey is a tapestry of breathtaking landscapes and timeless moments.
           With us, your travel transcends into a utopian adventure.
         </h1>
-        <div className="hero-img">
-          <img src="./assets/hero.jpg" alt="hero" />
-        </div>
         <h1>
           Discover the charm of hidden gems and cultural treasures on a voyage
           that delves deep into the heart of the worlds most elusive

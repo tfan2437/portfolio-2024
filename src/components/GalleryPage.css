@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Saans";
 }
 
 .gallery-container {
@@ -78,7 +79,7 @@
 
 .active-img-indicator {
   position: absolute;
-  top: 195px;
+  top: 185px;
   left: 50%;
   transform: translateX(-50%);
   width: 170px;
@@ -177,10 +178,6 @@
   text-transform: uppercase;
 }
 
-.hero-img {
-  margin-bottom: 2em;
-}
-
 .gallery-container.dark-theme,
 .gallery-container.gallery-container.dark-theme .minimap {
   background-color: #fff;
@@ -190,6 +187,10 @@
 .gallery-container.dark-theme p,
 .gallery-container.dark-theme h1 {
   color: #000;
+}
+
+.container h1 {
+  color: #ffffff;
 }
 
 @media (max-width: 900px) {

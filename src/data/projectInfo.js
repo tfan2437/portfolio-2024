@@ -12,6 +12,7 @@ export const projectInfo = [
       "* After Effects",
       "* Ethereum Mining */",
     ],
+    domain: "https://www.youtube.com/watch?v=frIReieagTQ",
   },
   {
     name: "ORBIT",
@@ -26,6 +27,7 @@ export const projectInfo = [
       "* Firebase Auth",
       "* Firestore Database */",
     ],
+    domain: "https://orbit-ai-chatbot.vercel.app",
   },
   {
     name: "TOVIER",
@@ -40,6 +42,7 @@ export const projectInfo = [
       "* Firebase Auth",
       "* Firestore Database */",
     ],
+    domain: "https://tovier-trailer.vercel.app",
   },
   {
     name: "SONICFI",
@@ -54,5 +57,6 @@ export const projectInfo = [
       "* Firebase Auth",
       "* Firestore Database */",
     ],
+    domain: "https://sonicfi.vercel.app",
   },
 ];
