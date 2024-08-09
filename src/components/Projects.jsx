@@ -24,7 +24,7 @@ const Projects = () => {
         </NavLink>
       </div>
       <div className="project-cards">
-        <NavLink to={"/gallery"}>
+        <NavLink to={"/project/orbit"}>
           <div className="project-card">
             <div className="project-card-wrapper">
               <img src={assets.orbit_m} alt="" />
@@ -39,31 +39,39 @@ const Projects = () => {
           </div>
         </NavLink>
         <div className="projects-divider"></div>
-        <div className="project-card">
-          <div className="project-card-wrapper">
-            <img src={assets.tovier_m} alt="" />
-            <div className="card-mask"></div>
-            <div className="project-card-text">
-              <div className="project-name">
-                TOVIER <span>Movies & TV Trailer</span>
+
+        <NavLink to={"/project/tovier"}>
+          <div className="project-card">
+            <div className="project-card-wrapper">
+              <img src={assets.tovier_m} alt="" />
+              <div className="card-mask"></div>
+              <div className="project-card-text">
+                <div className="project-name">
+                  TOVIER <span>Movies & TV Trailer</span>
+                </div>
+                <div className="project-card-id">2</div>
               </div>
-              <div className="project-card-id">2</div>
             </div>
           </div>
-        </div>
+        </NavLink>
+
         <div className="projects-divider"></div>
-        <div className="project-card">
-          <div className="project-card-wrapper">
-            <img src={assets.sonicfi_m} alt="" />
-            <div className="card-mask"></div>
-            <div className="project-card-text">
-              <div className="project-name">
-                Sonicfi <span>Music Streaming</span>
+
+        <NavLink to={"/project/sonicfi"}>
+          <div className="project-card">
+            <div className="project-card-wrapper">
+              <img src={assets.sonicfi_m} alt="" />
+              <div className="card-mask"></div>
+              <div className="project-card-text">
+                <div className="project-name">
+                  Sonicfi <span>Music Streaming</span>
+                </div>
+                <div className="project-card-id">3</div>
               </div>
-              <div className="project-card-id">3</div>
             </div>
           </div>
-        </div>
+        </NavLink>
+
         <div className="projects-divider"></div>
         <div className="project-card">
           <div className="project-card-wrapper">

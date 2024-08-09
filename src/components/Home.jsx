@@ -104,7 +104,7 @@ const Home = () => {
           </div>
           <a href={projectInfo[projectIndex].domain} target="_blank">
             <button className="nav-button">
-              <span>·</span> PROJECT WEBSITE
+              <span>·</span> LIVE DEMO
             </button>
           </a>
         </div>

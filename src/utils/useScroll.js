@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const useScroll = () => {
+const useScroll = (value) => {
   useEffect(() => {
     const imagesContainer = document.querySelector(".images");
     const preview = document.querySelector(".preview");
@@ -19,7 +19,7 @@ const useScroll = () => {
     const imagesEnd = imagesStart + imagesContainer.offsetHeight;
     const viewportHeight = window.innerHeight;
     const previewHeight = preview.offsetHeight;
-    const previewMaxTranslate = (minimap.offsetHeight - previewHeight) * 0.95;
+    const previewMaxTranslate = (minimap.offsetHeight - previewHeight) * value;
 
     function handleScroll() {
       const scrollPosition = window.scrollY;
