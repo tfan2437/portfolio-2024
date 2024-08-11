@@ -57,9 +57,10 @@ const Home = () => {
 
       <div className="intro-container">
         <p className="intro">
-          Lorenzo Michelini, an independent creative developer, specializes in
-          3D, interaction, and fluid animations. Operating from Modena, Italy,
-          he offers his expertise remotely to clients across the globe.
+          Ambitious Junior Frontend Developer skilled in React and JavaScript,
+          currently pursuing a part-time Master’s in Computer Science at Georgia
+          Tech. Seeking my first web development role to contribute to
+          innovative projects while continuing to learn and grow.
         </p>
         <p className="portfolio-text animated-text animated-repeat">
           PORTFOLIO 2024

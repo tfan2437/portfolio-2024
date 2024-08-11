@@ -2,12 +2,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import GalleryPage from "./components/GalleryPage";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route index element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route
           path="/project/orbit"

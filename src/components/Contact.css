@@ -1,0 +1,235 @@
+/* General styles */
+.hero-section * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container styles */
+.hero-section {
+  width: 100%;
+  height: 100%;
+  background: #eae9e4;
+  font-family: "Neue Montreal";
+}
+
+/* Button styles */
+.hero-section button {
+  background: none;
+  outline: none;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+.hero-section button#hero-section__toggle {
+  background: #000;
+  color: #fff;
+}
+
+.hero-section button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Navigation and tagline styles */
+.hero-section__nav,
+.hero-section__tagline {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+.hero-section__tagline {
+  bottom: 0;
+}
+
+/* Links section */
+.hero-section__links {
+  position: absolute;
+  bottom: 1.5em;
+  left: 1.5em;
+  display: flex;
+  gap: 1em;
+}
+
+/* Header section */
+.hero-section__header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-section__header-text h1 {
+  font-family: "Timmons NY 2.005";
+  font-size: 20vw;
+  font-weight: lighter;
+}
+
+/* Call to action */
+.hero-section__cta {
+  margin: 1em 0;
+}
+
+/* Overlay */
+.hero-section__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #262625;
+  display: flex;
+  padding: 1em;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Column layout */
+.hero-section__col:nth-child(1) {
+  flex: 1;
+  height: 100%;
+  border-right: 1.5px solid #eae9e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3em;
+}
+
+.hero-section__col:nth-child(2) {
+  flex: 2;
+  padding: 0 1em;
+}
+
+/* Logo section */
+.hero-section__logo {
+  width: max-content;
+  border: 1px solid #eae9e4;
+}
+
+.hero-section__logo a {
+  padding: 0 0.25em;
+  text-decoration: none;
+  color: #eae9e4;
+  text-transform: uppercase;
+}
+
+/* About section */
+.hero-section__about {
+  width: 40%;
+  color: #eae9e4;
+  margin: 1em 0;
+}
+
+/* Copy section */
+.hero-section__copy {
+  display: flex;
+  justify-content: space-between;
+  color: #eae9e4;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* Send section */
+.hero-section__send {
+  position: absolute;
+  bottom: 0em;
+}
+
+.hero-section__send h1 {
+  color: #eae9e4;
+  font-family: "Timmons NY 2.005";
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 400px;
+}
+
+/* Form section */
+.hero-section__form label {
+  color: #eae9e4;
+  font-size: 20px;
+}
+
+.hero-section input[type="text"] {
+  width: 50%;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #eae9e4;
+  padding: 0.5em 0;
+  margin: 1em 0;
+  color: #eae9e4;
+}
+
+.hero-section::placeholder {
+  text-transform: uppercase;
+  color: #eae9e4;
+  font-size: 12px;
+}
+
+.hero-section__form button {
+  color: #000;
+  background: #eae9e4;
+  border: 1px solid #eae9e4;
+}
+
+/* Jobs section */
+.hero-section__jobs {
+  margin: 1em 0 3em 0;
+  display: flex;
+  gap: 1em;
+}
+
+.hero-section__job-items label {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.hero-section__item {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+/* Span animation */
+.hero-section__send h1 span,
+.hero-section__header-text h1 span {
+  position: relative;
+  top: 500px;
+}
+
+/* Media query */
+@media (max-width: 900px) {
+  .hero-section__logo {
+    margin-bottom: 2em;
+  }
+
+  .hero-section__links {
+    display: none;
+  }
+
+  .hero-section__overlay {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section__col:nth-child(1) {
+    border: none;
+  }
+
+  .hero-section__send {
+    right: 1em;
+  }
+
+  .hero-section__send h1 {
+    font-size: 150px;
+  }
+}
